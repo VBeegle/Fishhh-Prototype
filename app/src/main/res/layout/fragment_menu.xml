@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/sixty_trans_white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/Settingsbutton"
+            style="@style/Icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_settings_black_48dp" />
+
+        <Button
+            android:id="@+id/AddFood"
+            style="@style/Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Food" />
+
+        <Button
+            android:id="@+id/Settings"
+            style="@style/Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings" />
+
+        <Button
+            android:id="@+id/FishIndex"
+            style="@style/Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fish Index" />
+
+        <Button
+            android:id="@+id/Customize"
+            style="@style/Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customize" />
+
+        <Button
+            android:id="@+id/Shop"
+            style="@style/Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop" />
+    </LinearLayout>
+
+</FrameLayout>

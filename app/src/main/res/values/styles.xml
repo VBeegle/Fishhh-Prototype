@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Icon">
+        <item name="android:tint">@color/primary_dark</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    <style name="Menu">
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="text">
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:textColorHint">@color/primary_dark</item>
+    </style>
+    <style name="Buttons">
+        <item name="android:backgroundTint">@color/primary_dark</item>
+        <item name="android:textColor">@color/primary_light</item>
+    </style>
+</resources>

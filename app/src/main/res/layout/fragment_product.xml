@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".5"
+        android:background="@drawable/waterbackground1">
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="566dp"
+                android:background="@drawable/sharksketch" />
+
+                <TextView
+                    android:id="@+id/product_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pet Shark"
+                    android:textSize="30dp"
+                    style="@style/text"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/moneyIcon"
+                    android:text="500/  $5.00"
+                    android:textSize="30dp"
+                    android:paddingStart="5dp" />
+
+                <ImageView
+                    android:id="@+id/moneyIcon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/fishcoin" />
+
+            </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A pet shark to play with! Who doesn't love sharks?"
+                    android:textSize="25dp"
+                    style="@style/text"/>
+
+
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Package Includes:
+                    \nUnique Shark Skin
+                    \nUnlocked Shark in Fish Index
+                    \nUnique Animations
+                    \nUnique Food
+                    \nAbility to Auto-Chase Food"
+                    style="@style/text"
+                    android:textSize="20dp"/>
+
+
+                <Button
+                    android:id="@+id/buyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/Buttons"
+                    android:text="Purchase" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

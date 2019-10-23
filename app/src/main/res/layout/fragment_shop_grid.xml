@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopGridFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".5"
+        android:background="@drawable/waterbackground1">
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/SharkProduct"
+            android:layout_width="150dp"
+            android:layout_height="256dp"
+            android:background="@drawable/sharksketch" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ProductTitle"
+            style="@style/text"
+            android:text="Pet Shark"
+            android:layout_below="@+id/SharkProduct"/>
+
+
+        <TextView
+            android:id="@+id/Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductTitle"
+            android:layout_toEndOf="@+id/moneyIcon"
+            android:text="500/  $5.00"
+            android:paddingStart="5dp"/>
+
+       <ImageView
+            android:id="@+id/moneyIcon"
+            android:layout_width="17dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/ProductTitle"
+            android:background="@drawable/fishcoin" />
+
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
